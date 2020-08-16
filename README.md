@@ -5,9 +5,11 @@ A Android Custom ProgressBar
 
 # GIF
 - Filling
+
 ![Filling Animation](https://github.com/manson112/AndroidShadeProgressBar/blob/master/gif/anim_fill.gif)
 
 - Turning
+
 ![Turning Animation](https://github.com/manson112/AndroidShadeProgressBar/blob/master/gif/anim_progress.gif)
 # Setup
 ```Gradle
