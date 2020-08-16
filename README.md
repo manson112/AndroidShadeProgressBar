@@ -12,7 +12,7 @@ allprojects {
 	}
 }
 dependencies {
-        implementation 'com.github.manson112:ShadeProgressBar:1.0.0'
+        implementation 'com.github.manson112:AndroidShadeProgressBar:1.0.1'
 }
 ```
 
