@@ -33,6 +33,7 @@ class ShadeProgressBar @JvmOverloads constructor(
         private var _itemPercentage: Int = 0
         private lateinit var item: Item
         private lateinit var progressAnimator: ValueAnimator
+        private lateinit var fillingAnimator: ValueAnimator
 
         var shadeColor: Int
             @ColorInt get() = _shadeColor
@@ -90,6 +91,7 @@ class ShadeProgressBar @JvmOverloads constructor(
             get() = _itemPercentage
             set(value) {
                 _itemPercentage = value
+                setShadeLocation()
                 invalidate()
             }
         private val paintBackground = Paint().apply {
@@ -206,6 +208,27 @@ class ShadeProgressBar @JvmOverloads constructor(
         fun stopProgress() {
             progressAnimator?.removeAllListeners()
             progressAnimator?.cancel()
+        }
+
+        fun startFillingAnimation() {
+            itemPercentage = 0
+            fillingAnimator = ValueAnimator.ofInt(
+                itemPercentage,
+                itemPercentage+100
+            ).apply {
+                duration = itemAnimDuration
+                interpolator = LinearInterpolator()
+                repeatCount = ValueAnimator.INFINITE
+                addUpdateListener {
+                    itemPercentage = it.animatedValue as Int
+                }
+                start()
+            }
+        }
+
+        fun stopFillingAnimation() {
+            fillingAnimator.removeAllListeners()
+            fillingAnimator.cancel()
         }
 
         companion object {

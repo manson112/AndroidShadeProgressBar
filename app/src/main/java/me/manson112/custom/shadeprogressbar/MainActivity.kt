@@ -10,10 +10,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn.setOnClickListener {
-            fill_image.startProgress()
+//            fill_image.startProgress()
+            fill_image.startFillingAnimation()
         }
         btn2.setOnClickListener {
-            fill_image.stopProgress()
+//            fill_image.stopProgress()
+            fill_image.stopFillingAnimation()
         }
 
     }
