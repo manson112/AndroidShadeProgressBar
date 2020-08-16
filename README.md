@@ -1,6 +1,8 @@
 # AndroidShadeProgressBar
 [![](https://jitpack.io/v/manson112/AndroidShadeProgressBar.svg)](https://jitpack.io/#manson112/AndroidShadeProgressBar)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+Mozilla
 A Android Custom ProgressBar
 
 # GIF
