@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShadeProgressBar">
+        <attr name="shadeColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="shadeSize" format="dimension"/>
+        <attr name="shadeRadius" format="integer"/>
+        <attr name="sideCornerRadius" format="dimension"/>
+        <attr name="itemSize" format="dimension"/>
+        <attr name="percentage" format="integer"/>
+        <attr name="src" format="reference"/>
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+
+    <attr name="DefStyle" format="reference" />
+</resources>

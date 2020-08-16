@@ -1,0 +1,3 @@
+include ':ShadeProgressBar'
+include ':app'
+rootProject.name = "FillingObject"
