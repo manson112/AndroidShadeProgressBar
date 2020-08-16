@@ -1,4 +1,5 @@
 # AndroidShadeProgressBar
+[![](https://jitpack.io/v/manson112/AndroidShadeProgressBar.svg)](https://jitpack.io/#manson112/AndroidShadeProgressBar)
 A Android Custom ProgressBar
 
 # GIF
